@@ -1,0 +1,64 @@
+/* Thiết lập box-sizing cho toàn bộ các phần tử */
+* {
+    box-sizing: border-box;
+}
+
+/* Định dạng chung */
+body {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
+    padding: 30px;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 25px;
+}
+
+/* Khối chứa 2 cột sử dụng float và overflow để clearfix */
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 25px auto;
+    overflow: hidden; /* Ngăn chặn hiện tượng sập chiều cao do float */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.left-column {
+    width: 50%;
+    float: left;
+    background-color: #e2e8f0; /* lightgray hiện đại */
+    color: #1e293b;
+    padding: 25px;
+    min-height: 120px;
+    font-weight: 500;
+}
+
+.right-column {
+    width: 50%;
+    float: right;
+    background-color: #dcfce7; /* lightgreen hiện đại */
+    color: #15803d;
+    padding: 25px;
+    min-height: 120px;
+    font-weight: 500;
+}
+
+/* Khối quản lý nội dung dài bằng overflow */
+.overflow-box {
+    width: 300px;
+    height: 100px;
+    background-color: #fee2e2; /* lightcoral hiện đại */
+    color: #b91c1c;
+    padding: 10px;
+    margin: 0 auto;
+    overflow: auto; /* Hiển thị thanh cuộn khi nội dung vượt quá kích thước */
+    border: 2px solid #f87171;
+    border-radius: 6px;
+    line-height: 1.5;
+    font-size: 14px;
+}
